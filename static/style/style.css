@@ -1,0 +1,140 @@
+.big-banner{
+  background-image: url("../assets/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  float: left;
+  width: 30%;
+  background-color: rgba(0, 0, 0, .4); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  position: fixed;
+  float: left;
+}
+
+.no-scroll {
+  position: absolut;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  font-family: 'Potta One', cursive;
+  font-size: 30px;
+  color: gray;
+  display: block;
+  margin-left: 25%;
+  margin-right: auto;
+  padding-top: 3%;
+}
+
+.text-box {
+  margin-left: 275px;
+  margin-right: 100px;
+  margin-top: 100px;
+  width: 300px;
+  height: 200px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.profile {
+  size: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 7%;
+ 
+}
+
+.fill-height {
+  min-height: 100%;
+  min-width: 100%;
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
+
+.row {
+  height: 100%;
+}
+
+.intro-container {
+  width: 100%;
+  height: 100%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.introduction-box {
+  background-color: rgba(0, 0, 0, .4);
+  height: fit-content;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.heading-introsite {
+  color: white;
+  text-align: center;
+  font-family: 'Potta One', cursive;
+}
+
+.heading-sidebar {
+  color: gray;
+  text-align: center;
+  font-family: 'Potta One', cursive;
+  padding-top: 10%;
+}
+
+.about-text {
+  font-family: 'Hachi Maru Pop', cursive;
+  color: white;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
