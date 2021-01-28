@@ -19,7 +19,7 @@ readDocument = readWord
 
 app.config['JSON_ADD_STATUS'] = True
 app.config['JSON_DATETIME_FORMAT'] = '%d/%m/%Y %H:%M:%S'
-
+#dapd
 @app.route('/')
 def hello_world():
   description = readDocument('')
