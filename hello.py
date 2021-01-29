@@ -22,7 +22,7 @@ app.config['JSON_DATETIME_FORMAT'] = '%d/%m/%Y %H:%M:%S'
 #dapd
 @app.route('/')
 def hello_world():
-  description = readDocument('')
+  description = readDocument('static/assets/text/description.docx')
   print(description)
   return render_template('home.html', description=description)
 
@@ -36,7 +36,7 @@ def projectPage():
 
 
 if __name__ == '__main__':
-  app.run(port=8080, debug=True)
+  app.run(debug=True)
 
 
 

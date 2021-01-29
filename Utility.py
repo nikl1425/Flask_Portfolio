@@ -1,5 +1,5 @@
 import sys
-import docx2txt
+from docx2txt import docx2txt
 
 print(sys.path)
 
@@ -18,6 +18,3 @@ def readWord(path):
   return my_string
 
 
-hi = readWord("static/assets/text/beskrivelse.docx")
-
-print(hi)
