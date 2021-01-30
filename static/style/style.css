@@ -4,11 +4,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100% !important;
+  height: 100% !important;
  }
 
 body {
     left: 0;
     right: 0;
+    bottom: 0%;
+    height: 100%
 }
 /* The sidebar menu */
 .sidenav {
@@ -149,4 +152,48 @@ body {
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+th {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    size: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+td {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    size: 40px;
+    padding-top: 5px;
+}
+
+.table-bordered {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.project-img {
+    width: 300px;
+    height: 200px;
+}
+
+.heading-project {
+    text-align: center;
+}
+
+.text-project {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.keywords-text {
+    font-family: 'Fredoka One', cursive;
+}
+
+.icon {
+    width: 50px;
+    margin-left: 5px;
 }

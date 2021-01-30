@@ -33,7 +33,8 @@ def aboutPage():
 
 @app.route('/project')
 def projectPage():
-  return render_template('project.html')
+  IMDB = readDocument('static/assets/text/IMDB.docx')
+  return render_template('project.html', IMDB=IMDB)
 
 
 if __name__ == '__main__':
