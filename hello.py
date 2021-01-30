@@ -34,7 +34,8 @@ def aboutPage():
 @app.route('/project')
 def projectPage():
   IMDB = readDocument('static/assets/text/IMDB.docx')
-  return render_template('project.html', IMDB=IMDB)
+  TD = readDocument('static/assets/text/TowerDefence.docx')
+  return render_template('project.html', IMDB=IMDB, TD=TD)
 
 
 if __name__ == '__main__':
