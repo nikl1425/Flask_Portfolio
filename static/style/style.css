@@ -1,9 +1,15 @@
 .big-banner{
   background-image: url("../assets/background5.jpg");
-  background-size: 100%;
+  background-size: 100% !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100% !important;
  }
+
+body {
+    left: 0;
+    right: 0;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%;
@@ -93,6 +99,11 @@
   padding-left:0;
   margin-right:auto;
   margin-left:auto
+}
+
+.dates {
+    color: gray !important;
+
 }
 
 .row {

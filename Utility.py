@@ -1,7 +1,7 @@
 import sys
 from docx2txt import docx2txt
 
-print(sys.path)
+#print(sys.path)
 
 # This reader read an html template to a string
 def myReader(path): 

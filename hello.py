@@ -12,7 +12,7 @@ jobDoc = 'static/assets/text/job.docx'
 #sys.path.append('/Users/niklashjort/Desktop/Projects/Flask_Portfolio-master/venv/lib/python3.9/site-packages/flask_cors/')
 app = Flask(__name__)
 
-print(sys.path)
+#print(sys.path)
 
 myTemplate = myReader
 readDocument = readWord
@@ -23,8 +23,9 @@ app.config['JSON_DATETIME_FORMAT'] = '%d/%m/%Y %H:%M:%S'
 @app.route('/')
 def hello_world():
   description = readDocument('static/assets/text/description.docx')
-  print(description)
-  return render_template('home.html', description=description)
+  job = readDocument('static/assets/text/job.docx')
+  education = readDocument('static/assets/text/education.docx')
+  return render_template('home.html', description=description, job=job, education=education)
 
 @app.route('/about')
 def aboutPage():
