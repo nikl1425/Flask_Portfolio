@@ -35,7 +35,9 @@ def aboutPage():
 def projectPage():
   IMDB = readDocument('static/assets/text/IMDB.docx')
   TD = readDocument('static/assets/text/TowerDefence.docx')
-  return render_template('project.html', IMDB=IMDB, TD=TD)
+  CodeLearn = readDocument('static/assets/text/codeLearningGame.docx')
+  Portfolio = readDocument('static/assets/text/portfolio.docx')
+  return render_template('project.html', IMDB=IMDB, TD=TD, CodeLearn=CodeLearn, Portfolio=Portfolio)
 
 
 if __name__ == '__main__':
