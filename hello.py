@@ -25,7 +25,7 @@ def hello_world():
   description = readDocument('static/assets/text/description.docx')
   job = readDocument('static/assets/text/job.docx')
   education = readDocument('static/assets/text/education.docx')
-  return render_template('home.html', description=description, job=job, education=education)
+  return render_template('index.html', description=description, job=job, education=education)
 
 @app.route('/about')
 def aboutPage():
@@ -37,7 +37,16 @@ def projectPage():
   TD = readDocument('static/assets/text/TowerDefence.docx')
   CodeLearn = readDocument('static/assets/text/codeLearningGame.docx')
   Portfolio = readDocument('static/assets/text/portfolio.docx')
-  return render_template('project.html', IMDB=IMDB, TD=TD, CodeLearn=CodeLearn, Portfolio=Portfolio)
+  MineSweeper = readDocument('static/assets/text/mineSweeper.docx')
+  Maze = readDocument('static/assets/text/maze.docx')
+  return render_template('/new/proj.html',
+                         IMDB=IMDB,
+                         TD=TD,
+                         CodeLearn=CodeLearn,
+                         Portfolio=Portfolio,
+                         MineSweeper=MineSweeper,
+                         Maze=Maze)
+
 
 
 if __name__ == '__main__':
