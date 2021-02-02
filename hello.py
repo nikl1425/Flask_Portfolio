@@ -39,13 +39,15 @@ def projectPage():
   Portfolio = readDocument('static/assets/text/portfolio.docx')
   MineSweeper = readDocument('static/assets/text/mineSweeper.docx')
   Maze = readDocument('static/assets/text/maze.docx')
+  Chicago = readDocument('static/assets/text/Chicago.docx')
   return render_template('/new/proj.html',
                          IMDB=IMDB,
                          TD=TD,
                          CodeLearn=CodeLearn,
                          Portfolio=Portfolio,
                          MineSweeper=MineSweeper,
-                         Maze=Maze)
+                         Maze=Maze,
+                         Chicago=Chicago)
 
 
 

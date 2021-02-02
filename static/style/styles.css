@@ -6753,7 +6753,7 @@ button.bg-black:focus {
 }
 
 .align-items-center {
-  align-items: center !important;
+
 }
 
 .align-items-baseline {
@@ -10394,4 +10394,54 @@ body {
     font-family: 'Fredoka One', cursive;
     vertical-align: top !important;
     color: white;
-}s
+}
+
+
+
+.about-text {
+  font-family: 'Londrina Solid', cursive;
+  color: white;
+  size: 10%;
+
+}
+
+.heading-introsite {
+  color: white;
+  font-family: 'Potta One', cursive;
+}
+
+.profile {
+    width: 87%;
+}
+
+.graph {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile {
+         width: 80%;
+         align-items: center;
+         margin-left: auto;
+         margin-right: auto;
+         padding-bottom: 2%;
+         display: block;
+
+    }
+    .graph {
+    width:70%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile {
+         width: 100%;
+    }
+    .graph {
+    width:100%;
+    }
+}
