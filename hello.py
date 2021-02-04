@@ -1,21 +1,22 @@
-from flask import Flask, jsonify
-from flask import render_template
-from Utility import myReader, readWord
-from datetime import datetime
-import sys
+from flask import Flask, request, render_template
+from Utility import myReader, readWord, Client
+import nexmo
+
 
 descriptionDoc = 'static/assets/text/description.docx'
 educationDoc = 'static/assets/text/education.docx'
 jobDoc = 'static/assets/text/job.docx'
 
+client = Client
 
-#sys.path.append('/Users/niklashjort/Desktop/Projects/Flask_Portfolio-master/venv/lib/python3.9/site-packages/flask_cors/')
+# sys.path.append('/Users/niklashjort/Desktop/Projects/Flask_Portfolio-master/venv/lib/python3.9/site-packages/flask_cors/')
 app = Flask(__name__)
 
 #print(sys.path)
 
 myTemplate = myReader
 readDocument = readWord
+
 
 app.config['JSON_ADD_STATUS'] = True
 app.config['JSON_DATETIME_FORMAT'] = '%d/%m/%Y %H:%M:%S'
@@ -27,9 +28,19 @@ def hello_world():
   education = readDocument('static/assets/text/education.docx')
   return render_template('index.html', description=description, job=job, education=education)
 
-@app.route('/about')
+@app.route('/Contact', methods=['GET', 'POST'])
 def aboutPage():
-  return render_template('about.html')
+    if request.method == 'POST':
+        name = request.form['name']
+        number = request.form['number']
+        email = request.form['email']
+        message = request.form['message']
+        message = ("name: " + name + " number: " + number + "email: " + email + "message: " + message)
+        client.sendSms(message)
+
+
+
+    return render_template('/new/contact.html')
 
 @app.route('/project')
 def projectPage():

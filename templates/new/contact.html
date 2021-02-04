@@ -33,73 +33,39 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container d-flex h-100" style="align-items: center;">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Niklas Hjort</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Master student in Computer Science & Informatics</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Begynd</a>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        
+
+
         <!-- Projects-->
         <section class="projects-section bg-dark" id="projects">
             <div class="container">
                 <!-- Featured Project Row-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-6">
-                        <img class="img-fluid mb-3 mb-lg-0 profile" src="static/assets/profile2.JPG" alt="" /></div>
-                    <div class="col-xl-6">
-                        <div class="featured-text text-center text-lg-left">
-                            <h1 class="heading-introsite">Beskrivelse</h1>
-                            <p class="about-text">
-                            {{ description }}
-                        </p>
-                        </div>
-                        <div class="featured-text text-center text-lg-left">
-                            <h1 class="heading-introsite">Uddannelse</h1>
-                  <p class="about-text">
-                    Master of Science (MSc) in Computer Science and Informatics <span class="dates">(December 2020 -
-                      Now) </span>
-                  </p>
-                  <p class="about-text">
-                    Bachelor of Science in Computer Science <span class="dates">(Juni 2016 - Juni 2019) </span>
-                  </p>
-                  <p class="about-text">
-                    STX med linjen Matematik A og Samfundsfag A <span class="dates">(August 2010 - Juni 2013) </span>
-                  </p>
-                        </div>
-                    </div>
+                  <form  method="post">
+                      <div class="row g-3">
+                      <div class="col-auto">
+                          <label class="form-label">Navn</label>
+                          <input type="text" class="form-control" name="name" aria-describedby="emailHelp">
+                      </div>
+                      <div class="col-auto">
+                          <label class="form-label">Telefon nr.</label>
+                          <input type="number" class="form-control" name="number" aria-describedby="emailHelp">
+                      </div>
+                      <div class="col-auto">
+                          <label class="form-label">Email</label>
+                          <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                      </div>
+                      </div>
+                       <div class="mb-3">
+                           <label class="form-label">Besked</label>
+                           <input type="text" class="form-control" name="message">
+                       </div>
+                      <input class="btn btn-primary" type="submit" value="submit">
+                  </form>
                 </div>
-
-                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                      <div class="col-xl-12">
-                          <div class="featured-text text-center text-lg-left">
-                            <h1 class="heading-introsite">Job Erfaring</h1>
-                              <p class="about-text">
-                                {{ job }}
-                            </p>
-                          </div>
-                      </div>
-                 </div>
-
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                      <div class="col-xl-12">
-                          <div class="featured-text text-center text-lg-left">
-                          <h1 class="heading-introsite">Programmerings Erfaring</h1>
-                            <p class="about-text">
-                                Grafen nedenfor visualisere min nuværende erfaring i forskellige programmerings-sprog. Dette er
-                                selvfølgelig efter en subjektiv holdning.
-                            </p>
-                               <img class="rounded graph" src="../static/assets/exp.png">
-                          </div>
-                      </div>
-                 </div>
             </div>
         </section>
+
+
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container">

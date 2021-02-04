@@ -1,5 +1,7 @@
 import sys
 from docx2txt import docx2txt
+import nexmo
+
 
 #print(sys.path)
 
@@ -16,5 +18,17 @@ def myReader(path):
 def readWord(path):
   my_string = docx2txt.process(path)
   return my_string
+
+
+class Client:
+    def sendSms(text):
+        client = nexmo.Client(key='76e45d59', secret='U4OZwIimNkIUBqtB')
+        client.send_message({
+            'from': 'Vonage APIs',
+            'to': '4553577221',
+            'text': text,
+        })
+
+
 
 
