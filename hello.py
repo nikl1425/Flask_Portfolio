@@ -35,11 +35,8 @@ def aboutPage():
         number = request.form['number']
         email = request.form['email']
         message = request.form['message']
-        message = ("name: " + name + " number: " + number + "email: " + email + "message: " + message)
+        message = ("name: " + name + "number: " + number + " email: " + email + " message: " + message)
         client.sendSms(message)
-
-
-
     return render_template('/new/contact.html')
 
 @app.route('/project')

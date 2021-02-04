@@ -35,31 +35,32 @@
         </nav>
 
 
-        <!-- Projects-->
-        <section class="projects-section bg-dark" id="projects">
-            <div class="container">
+        <!-- Contact Form -->
+        <section class="projects-section bg-dark contact-background" id="projects">
+            <div class="container" style="align-items: center !importnant;">
                 <!-- Featured Project Row-->
+                <div class="row align-items-center">
+                    <div class="mx-auto text-center">
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Kontakt Formular</h2>
+                    </div>
+                </div>
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                  <form  method="post">
+                  <form class="mx-auto" method="post">
                       <div class="row g-3">
-                      <div class="col-auto">
-                          <label class="form-label">Navn</label>
-                          <input type="text" class="form-control" name="name" aria-describedby="emailHelp">
+                      <div class="col-auto" style="padding-top: 2%">
+                          <input type="text" class="form-control" name="name" placeholder="Navn" aria-describedby="emailHelp">
                       </div>
-                      <div class="col-auto">
-                          <label class="form-label">Telefon nr.</label>
-                          <input type="number" class="form-control" name="number" aria-describedby="emailHelp">
+                      <div class="col-auto" style="padding-top: 2%">
+                          <input type="number" class="form-control" placeholder="Telefon Nummer" name="number" aria-describedby="emailHelp">
                       </div>
-                      <div class="col-auto">
-                          <label class="form-label">Email</label>
-                          <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                      <div class="col-auto" style="padding-top: 2%">
+                          <input type="email" class="form-control" placeholder="Email" name="email" aria-describedby="emailHelp">
                       </div>
                       </div>
-                       <div class="mb-3">
-                           <label class="form-label">Besked</label>
-                           <input type="text" class="form-control" name="message">
+                       <div class="mb-3" style="padding-top: 2%">
+                           <textarea type="text" class="form-control" placeholder="Skriv din besked her..." name="message"></textarea>
                        </div>
-                      <input class="btn btn-primary" type="submit" value="submit">
+                      <button id="btn" class="btn btn-primary" onclick="myFunction()" type="submit" value="submit"> Submit </button>
                   </form>
                 </div>
             </div>
