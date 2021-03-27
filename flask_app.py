@@ -55,6 +55,7 @@ def projectPage():
     Snake = readDocument('static/assets/text/snake.docx')
     Hangman = readDocument('static/assets/text/Hangman.docx')
     Tetris = readDocument('static/assets/text/Tetris.docx')
+    Weather = readDocument('static/assets/text/Weather.docx')
     return render_template('/new/proj.html',
                            IMDB=IMDB,
                            TD=TD,
@@ -67,7 +68,8 @@ def projectPage():
                            Database=Database,
                            Snake=Snake,
                            Hangman=Hangman,
-                           Tetris=Tetris)
+                           Tetris=Tetris,
+                           Weather=Weather)
 
 
 if __name__ == '__main__':
